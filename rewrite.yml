@@ -1,0 +1,11 @@
+---
+type: specs.openrewrite.org/v1beta/visitor
+name: com.github.sambsnyd.UseStaticJUnitAsserts
+visitors:
+  - org.openrewrite.java.UseStaticImport:
+      method: 'org.junit.jupiter.api.Assertions assert*(..)'
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: com.github.sambsnyd.All
+include:
+  - 'com.github.sambsnyd.*'
