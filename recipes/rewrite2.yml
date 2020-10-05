@@ -1,12 +1,13 @@
 ---
 type: specs.openrewrite.org/v1beta/visitor
-name: com.yourorg.UseSlf4j
+name: com.github.sambsnyd.UseSlf4j
 visitors:
   - org.openrewrite.java.ChangeFieldType:
     type: java.util.logging.Logger
     targetType: org.slf4j.Logger
 ---
 type: specs.openrewrite.org/v1beta/recipe
-name: com.yourorg.UseSlf4jRecipe
+name: com.github.sambsnyd.All
 include:
-  - 'com.yourorg.UseSlf4j'
+  - 'com.github.sambsnyd.*'
+
